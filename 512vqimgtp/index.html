@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAUGIC Manual Ear Cleaner - Gentle Water-Powered Ear Care</title>
+  <meta name="description" content="Discover the KAUGIC Manual Ear Cleaner. Water-powered, one-hand operation, medical-grade materials. A safer alternative to cotton swabs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; color: #1b2637; line-height: 1.6; background: #fff; }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header { background: #fff; border-bottom: 1px solid #eee; padding: 14px 0; }
+    header .container { display: flex; align-items: center; justify-content: space-between; }
+    .brand { font-size: 20px; font-weight: 700; color: #1b2637; text-decoration: none; }
+    .brand span { color: #0ea5a0; }
+    .header-cta { background: #0ea5a0; color: #fff; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; transition: background 0.2s; }
+    .header-cta:hover { background: #0c8e8a; }
+
+    /* Hero */
+    .hero { padding: 60px 0 50px; background: linear-gradient(180deg, #f0faf9 0%, #fff 100%); }
+    .hero-flex { display: flex; gap: 50px; align-items: center; }
+    .hero-content { flex: 1; }
+    .hero-visual { flex: 1; }
+    .tag { display: inline-block; background: #e0f5f4; color: #0c7c78; font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 6px; margin-bottom: 14px; letter-spacing: 0.5px; }
+    .hero h1 { font-size: 36px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+    .hero h1 em { font-style: normal; color: #0ea5a0; }
+    .hero-desc { font-size: 16px; color: #4b5e73; margin-bottom: 24px; line-height: 1.7; }
+    .hero-price { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
+    .h-price { font-size: 32px; font-weight: 700; }
+    .h-was { font-size: 16px; color: #999; text-decoration: line-through; }
+    .h-off { background: #fef3cd; color: #856404; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 5px; }
+    .btn-primary { display: inline-block; background: #0ea5a0; color: #fff; padding: 15px 36px; font-size: 16px; font-weight: 600; border-radius: 10px; text-decoration: none; transition: all 0.2s; }
+    .btn-primary:hover { background: #0c8e8a; transform: translateY(-1px); }
+    .hero-checks { list-style: none; margin-top: 20px; }
+    .hero-checks li { font-size: 14px; color: #4b5e73; padding: 4px 0; padding-left: 24px; position: relative; }
+    .hero-checks li::before { content: ""; position: absolute; left: 0; top: 9px; width: 16px; height: 16px; background: #0ea5a0; border-radius: 50%; }
+    .hero-checks li::after { content: ""; position: absolute; left: 4px; top: 13px; width: 8px; height: 4px; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg); }
+    .hero-visual img { border-radius: 16px; box-shadow: 0 16px 48px rgba(14,165,160,0.12); }
+
+    /* Problem / Solution */
+    .ps-section { padding: 60px 0; }
+    .ps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .ps-card { padding: 36px; border-radius: 14px; }
+    .ps-problem { background: #fff5f5; border: 1px solid #fed7d7; }
+    .ps-solution { background: #f0faf9; border: 1px solid #c6f0ed; }
+    .ps-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+    .ps-problem h3 { color: #c53030; }
+    .ps-solution h3 { color: #0c7c78; }
+    .ps-card ul { list-style: none; }
+    .ps-card li { font-size: 15px; padding: 6px 0; padding-left: 22px; position: relative; color: #4a5568; }
+    .ps-problem li::before { content: "\2717"; position: absolute; left: 0; color: #e53e3e; font-weight: 700; }
+    .ps-solution li::before { content: "\2713"; position: absolute; left: 0; color: #0ea5a0; font-weight: 700; }
+
+    /* Specs */
+    .specs { padding: 60px 0; background: #f8fafb; }
+    .specs-title { text-align: center; margin-bottom: 40px; }
+    .specs-title h2 { font-size: 30px; font-weight: 700; margin-bottom: 10px; }
+    .specs-title p { font-size: 15px; color: #666; }
+    .specs-flex { display: flex; gap: 40px; align-items: center; }
+    .specs-img { flex: 0 0 45%; }
+    .specs-img img { border-radius: 14px; }
+    .specs-list { flex: 1; }
+    .spec-row { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid #e2e8f0; }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-label { font-weight: 600; font-size: 15px; }
+    .spec-value { color: #4a5568; font-size: 15px; }
+
+    /* Testimonials */
+    .reviews { padding: 60px 0; }
+    .reviews-title { text-align: center; margin-bottom: 40px; }
+    .reviews-title h2 { font-size: 30px; font-weight: 700; margin-bottom: 10px; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .review-card { background: #fff; border: 1px solid #e8ecf1; border-radius: 12px; padding: 28px; }
+    .stars { color: #f59e0b; font-size: 16px; margin-bottom: 12px; letter-spacing: 2px; }
+    .review-card p { font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 14px; font-style: italic; }
+    .reviewer { font-size: 13px; font-weight: 600; color: #1b2637; }
+    .verified { font-size: 11px; color: #0ea5a0; font-weight: 500; }
+
+    /* Gallery */
+    .detail-gallery { padding: 60px 0; background: #f8fafb; }
+    .dg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .dg-grid img { border-radius: 12px; width: 100%; height: 300px; object-fit: cover; }
+
+    /* Bottom CTA */
+    .bottom-cta { padding: 70px 0; text-align: center; background: linear-gradient(135deg, #0ea5a0 0%, #0c7c78 100%); color: #fff; }
+    .bottom-cta h2 { font-size: 30px; font-weight: 700; margin-bottom: 14px; }
+    .bottom-cta p { font-size: 16px; opacity: 0.9; margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto; margin-bottom: 28px; }
+    .btn-white { display: inline-block; background: #fff; color: #0c7c78; padding: 15px 36px; font-size: 16px; font-weight: 600; border-radius: 10px; text-decoration: none; transition: all 0.2s; }
+    .btn-white:hover { background: #f0faf9; transform: translateY(-1px); }
+
+    /* Footer */
+    footer { background: #1b2637; color: #8896a6; padding: 32px 0; text-align: center; font-size: 13px; }
+    footer a { color: #0ea5a0; text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .hero-flex { flex-direction: column-reverse; }
+      .ps-grid { grid-template-columns: 1fr; }
+      .specs-flex { flex-direction: column; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .dg-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="/" class="brand">KAU<span>GIC</span></a>
+      <a href="https://www.amazon.com/KAUGIC-Removal-Pressure-Silicone-Cleaning/dp/B0DZHKYTFJ/" class="header-cta" target="_blank" rel="noopener">Buy on Amazon</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-flex">
+        <div class="hero-content">
+          <div class="tag">Ear Care Reinvented</div>
+          <h1>Stop Using Cotton Swabs. <em>Start Cleaning Safely.</em></h1>
+          <p class="hero-desc">The KAUGIC Manual Ear Cleaner uses gentle water pressure to flush out ear wax without pushing it deeper. One-hand operation, leak-proof design, and zero electricity required.</p>
+          <div class="hero-price">
+            <span class="h-price">$69.99</span>
+            <span class="h-was">$199.99</span>
+            <span class="h-off">65% OFF</span>
+          </div>
+          <a href="https://www.amazon.com/KAUGIC-Removal-Pressure-Silicone-Cleaning/dp/B0DZHKYTFJ/" class="btn-primary" target="_blank" rel="noopener">Order Now on Amazon</a>
+          <ul class="hero-checks">
+            <li>Free shipping on orders over $35</li>
+            <li>FSA and HSA eligible</li>
+            <li>30-day hassle-free returns</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img src="images/product-main.jpg" alt="KAUGIC Manual Ear Wax Cleaner" width="500" height="500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ps-section">
+    <div class="container">
+      <div class="ps-grid">
+        <div class="ps-card ps-problem">
+          <h3><svg width="22" height="22" fill="#c53030" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke="#c53030" stroke-width="2" fill="none"/><path d="M7 7l6 6M13 7l-6 6" stroke="#c53030" stroke-width="2"/></svg> The Problem with Cotton Swabs</h3>
+          <ul>
+            <li>Push ear wax deeper into the canal</li>
+            <li>Risk of eardrum perforation and injury</li>
+            <li>Incomplete cleaning leaves residue behind</li>
+            <li>Doctors and ENTs advise against them</li>
+            <li>Create compacted wax buildup over time</li>
+          </ul>
+        </div>
+        <div class="ps-card ps-solution">
+          <h3><svg width="22" height="22" fill="#0c7c78" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke="#0c7c78" stroke-width="2" fill="none"/><path d="M6 10l3 3 5-5" stroke="#0c7c78" stroke-width="2" fill="none"/></svg> The KAUGIC Difference</h3>
+          <ul>
+            <li>Water pressure flushes wax outward naturally</li>
+            <li>Soft silicone tip prevents canal contact</li>
+            <li>Complete cleaning with visible results</li>
+            <li>Recommended irrigation method by professionals</li>
+            <li>Integrated waste collection for mess-free use</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs">
+    <div class="container">
+      <div class="specs-title">
+        <h2>Built for Comfort and Safety</h2>
+        <p>Every detail is designed with your well-being in mind.</p>
+      </div>
+      <div class="specs-flex">
+        <div class="specs-img">
+          <img src="images/product-features.jpg" alt="KAUGIC Product Specifications" width="460" height="460">
+        </div>
+        <div class="specs-list">
+          <div class="spec-row"><span class="spec-label">Operation</span><span class="spec-value">Manual (no batteries)</span></div>
+          <div class="spec-row"><span class="spec-label">Pressure Control</span><span class="spec-value">Adjustable by hand</span></div>
+          <div class="spec-row"><span class="spec-label">Water Resistance</span><span class="spec-value">IPX7 Waterproof</span></div>
+          <div class="spec-row"><span class="spec-label">Material</span><span class="spec-value">Medical-grade ABS + Silicone</span></div>
+          <div class="spec-row"><span class="spec-label">BPA Free</span><span class="spec-value">Yes</span></div>
+          <div class="spec-row"><span class="spec-label">Waste Collection</span><span class="spec-value">Integrated tank</span></div>
+          <div class="spec-row"><span class="spec-label">Use</span><span class="spec-value">One-hand operation</span></div>
+          <div class="spec-row"><span class="spec-label">FSA/HSA</span><span class="spec-value">Eligible</span></div>
+          <div class="spec-row"><span class="spec-label">Color</span><span class="spec-value">Black</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews-title">
+        <h2>What Customers Are Saying</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I've been using cotton swabs for years and always felt like they weren't doing the job. This thing actually works. I could see the wax coming out and my hearing feels so much clearer."</p>
+          <span class="reviewer">Michael T.</span><br><span class="verified">Verified Purchase</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Super easy to use with one hand. The pressure is gentle but effective. I love that I can control exactly how strong the water flow is. Great for sensitive ears."</p>
+          <span class="reviewer">Sarah K.</span><br><span class="verified">Verified Purchase</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <p>"Compact, well-built, and does what it promises. I travel a lot for work and this fits right in my toiletry bag. No more ear discomfort on flights."</p>
+          <span class="reviewer">David R.</span><br><span class="verified">Verified Purchase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-gallery">
+    <div class="container">
+      <div class="dg-grid">
+        <img src="images/product-detail2.jpg" alt="KAUGIC Ear Cleaner Detail View" width="500" height="300">
+        <img src="images/product-detail3.jpg" alt="KAUGIC Ear Cleaner Kit" width="500" height="300">
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom-cta">
+    <div class="container">
+      <h2>Your Ears Deserve Better Care</h2>
+      <p>Make the switch to safe, water-powered ear cleaning. Thousands already have.</p>
+      <a href="https://www.amazon.com/KAUGIC-Removal-Pressure-Silicone-Cleaning/dp/B0DZHKYTFJ/" class="btn-white" target="_blank" rel="noopener">Shop Now on Amazon</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 KAUGIC. All rights reserved.</p>
+      <p style="margin-top:6px"><a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Service</a> &middot; <a href="mailto:support@removeh4arproblms.com">Contact Us</a></p>
+      <p style="margin-top:18px; font-size:11px; color:#5a6a7a; line-height:1.6; max-width:700px; margin-left:auto; margin-right:auto; border-top:1px solid #2d3d50; padding-top:14px;"><strong style="display:block; margin-bottom:4px; color:#7a8a9a; letter-spacing:0.5px; text-transform:uppercase; font-size:10px;">Health Disclaimer</strong>The product does not constitute medical advice and is not intended to diagnose, treat, cure, or prevent any disease. The product is not a substitute for medication or other treatment prescribed by a physician or health care provider.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
