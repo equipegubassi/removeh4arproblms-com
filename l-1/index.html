@@ -135,7 +135,7 @@
 
   <header>
     <div class="container">
-      <a href="/" class="brand">KAU<span>GIC</span></a>
+      <a href="../" class="brand">KAU<span>GIC</span></a>
       <a href="https://www.amazon.com/KAUGIC-Removal-Pressure-Silicone-Cleaning/dp/B0DZHKYTFJ/" class="header-cta" target="_blank" rel="noopener">Buy on Amazon</a>
     </div>
   </header>
@@ -160,7 +160,7 @@
           </ul>
         </div>
         <div class="hero-visual">
-          <img src="images/product-main.jpg" alt="KAUGIC Manual Ear Wax Cleaner" width="500" height="500">
+          <img src="../images/product-main.jpg" alt="KAUGIC Manual Ear Wax Cleaner" width="500" height="500">
         </div>
       </div>
     </div>
@@ -201,7 +201,7 @@
       </div>
       <div class="specs-flex">
         <div class="specs-img">
-          <img src="images/product-features.jpg" alt="KAUGIC Product Specifications" width="460" height="460">
+          <img src="../images/product-features.jpg" alt="KAUGIC Product Specifications" width="460" height="460">
         </div>
         <div class="specs-list">
           <div class="spec-row"><span class="spec-label">Operation</span><span class="spec-value">Manual (no batteries)</span></div>
@@ -246,8 +246,8 @@
   <section class="detail-gallery">
     <div class="container">
       <div class="dg-grid">
-        <img src="images/product-detail2.jpg" alt="KAUGIC Ear Cleaner Detail View" width="500" height="300">
-        <img src="images/product-detail3.jpg" alt="KAUGIC Ear Cleaner Kit" width="500" height="300">
+        <img src="../images/product-detail2.jpg" alt="KAUGIC Ear Cleaner Detail View" width="500" height="300">
+        <img src="../images/product-detail3.jpg" alt="KAUGIC Ear Cleaner Kit" width="500" height="300">
       </div>
     </div>
   </section>
@@ -310,9 +310,23 @@
   <footer>
     <div class="container">
       <p>&copy; 2025 KAUGIC. All rights reserved.</p>
-      <p style="margin-top:6px"><a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Service</a> &middot; <a href="mailto:support@removeh4arproblms.com">Contact Us</a></p>
+      <p style="margin-top:6px"><a href="../privacy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a> &middot; <a href="mailto:support@removeh4arproblms.com">Contact Us</a></p>
     </div>
   </footer>
 
+
+  <script>
+    var BASE_URL = "https://lp." + window.location.hostname;
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('.cta-link').forEach(function(link) {
+        var path = link.getAttribute('data-path');
+        if (path) {
+          link.href = BASE_URL + path;
+          link.removeAttribute('target');
+          link.removeAttribute('rel');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
